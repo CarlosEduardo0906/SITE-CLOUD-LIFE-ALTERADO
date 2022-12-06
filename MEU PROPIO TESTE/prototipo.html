@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Life</title>
+    <link rel="stylesheet" href="prototipo1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5c5dea0b83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+
+            <!--Imagem da logo no canto superior esquerdo do site-->
+            <a href="prototipo.html"><img src="/IMAGEM/LogoCloud.svg" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+
+                <!--Botão do mobile-->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="prototiposobre.html">SOBRE</a></li>
+                    <li><a href="prototipoproduto.html">PRODUTOS</a></li>
+                    <li><a href="">CONTATE-NOS</a></li>
+                </ul>
+            </div>
+
+            <!--Botão Mobile-->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+<!--Textos no Começo do Site-->
+<div class="text-box">
+    <h1>Seu prontuário na nuvem</h1>
+    <p>A Cloud Life é um <br>projeto em andamento</p>
+
+    <!--Botão do Começo do site (Nos Visite)-->
+    <a href="" class="hero-btn">Nos visite para saber mais</a>
+
+</div>
+    </section>
+    
+
+<!--Carrousel-->
+
+<!--Links Referenciais do Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+      </ol>
+      <div class="carousel-inner">
+
+        <!--Primeiro Banner-->
+        <div class="carousel-item active">
+          <div class="img-card col-12">
+            <h1 align="center" class="card-top mb-0" _msthash="1875497" _msttexthash="488046"></h1>
+           
+
+          </div>
+          <!--Botão VER MAIS do banner 1 (Apagado)-->
+          <div class="carousel-caption d-none">
+            <button type="button"  _msthash="2169856" _msttexthash="95524"></button>
+          </div>
+        </div>
+    
+        <!--Segundo Banner-->
+        <div class="carousel-item" _msthidden="3">
+          <div class="img-card-2 col-12" _msthidden="2">
+            <h5 align="center" class="card-top mb-0" _msthash="1876199" _msttexthash="59709" _msthidden="1"></h5>
+            <p class="mt-0 card-top" align="center" _msthidden="1"><small _msthash="1815047" _msttexthash="231296" _msthidden="1"></small></p>
+          </div>
+
+          <!--Botão VER MAIS do banner 2 (Apagado)-->
+          <div class="carousel-caption d-none" _msthidden="1">
+            <button type="button" _msthash="2170194" _msttexthash="95524" _msthidden="1"></button>
+          </div>
+        </div>
+        
+        <!--Terceiro Banner-->
+        <div class="carousel-item" _msthidden="3">
+          <div class="img-card-3 col-12" _msthidden="2">
+            <h5 align="center" class="card-top mb-0" _msthash="1876485" _msttexthash="137423" _msthidden="1"></h5>
+            <p class="mt-0 card-top" align="center" _msthidden="1"><small _msthash="1815320" _msttexthash="177398" _msthidden="1"></small></p>
+          </div>
+
+          <!--Botão VER MAIS do banner 3 (Apagado)-->
+          <div class="carousel-caption d-none" _msthidden="1">
+            <button type="button"  _msthash="2170532" _msttexthash="95524" _msthidden="1"></button>
+          </div>
+        </div>
+        
+
+<!--Botões de avançar e voltar-->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only" _msthash="1498289" _msttexthash="116246">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only" _msthash="1498497" _msttexthash="113945">Próximo</span>
+        </a>
+      </div>
+
+<!--Fim do carrousel-->
+
+
+
+    <!--Serviços-->
+
+    <section class="servicos">
+        <h1>Serviços que oferecemos</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Plano anual</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="course-col">
+            <h3>Plano gratuito</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="course-col">
+            <h3>Plano mensal</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+<!--Java para acionar menu no mobile-->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+<!--Fim do Java-->
+
+
+
+<!--Footer-->
+<section class="footer">
+    <h4>Sobre nós</h4>
+    <p class="pfooter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <a href="mailto:cloudlifeprojeto@hotmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/cloudl1fe/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" ></i></a>
+        <i class="fa fa-github"></i>
+    </div>
+</section>
+<!--Fim do Footer-->
+
+</body>
+</html>

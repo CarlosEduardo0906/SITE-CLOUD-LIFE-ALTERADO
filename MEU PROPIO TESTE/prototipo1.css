@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Fundo do site, cor de fundo e posicionamento */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(235, 244, 231, 1),rgba(235, 244, 231, 1)),url(https://im.ge/i/WhatsApp-Image-2022-11-28-at-16-38-39.SkuiDJ)
+    ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/* Menu nav, posicionamento, espaçamento, etc */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 110px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+
+/* Customização dos links Nav, adicionar cor, e tamanho, etc */
+.nav-links ul li a{
+    color: #2B3D41;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+
+/* Hover do nav */
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0dc453;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #2B3D41;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #2B3D41;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #2B3D41;
+    border: 1px solid #2B3D41;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+/* Bloco de "nos visite" */
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #9bcfc6;
+    transition: 1s;
+}
+
+/* Botões mobile invisivel ao site */
+nav .fa{
+    display: none;
+}
+
+
+
+/* Menu Mobile */
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+     }
+    .nav-links ul li{
+         display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #9bcfc6;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #609b91;
+        margin: 5px;
+        font-size: 22px;
+        cursor: pointer;
+        margin-left: 94%;
+        margin-top: -2%;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+
+
+/* Serviços */
+
+.servicos{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 6%;
+    display: flexbox;
+    justify-content: space-between;
+    margin-left: 250px;
+}
+
+.course-col{
+    flex-basis: 98%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+
+/* Sombreado ao passar o mouse */
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(168, 167, 167);
+}
+.footer:h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.pfooter{
+    font-size: 13px;
+    color: rgb(49, 78, 69);
+
+}
+
+
+
+.icons .fa{
+    color: #777;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/* Pagina "Sobre nós" */
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(235, 244, 231, 1),rgba(235, 244, 231, 1)),url();
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #2B3D41;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.sobre-nos{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.sobre-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.sobre-col img{
+    width: 100%;
+}
+
+.sobre-col h1{
+    padding-top: 0;
+}
+
+.sobre-col p{
+    padding: 15px 0 25px;
+}
+
+.azulm-btn{
+    border: 1px  solid #2B3D41;
+    background: transparent;
+    color: #2B3D41;
+}
+.azulm-btn:hover {
+    color: #0dc453;
+}
+
+
+/*Carrousel*/
+
+body {
+    background-color: #add8e6;
+  }
+  
+  .img-card {
+     width: 100%;
+    height: 500px;
+    background: url(https://fghsaude.org.br/home/wp-content/uploads/2022/04/23.02.2022-DN-Hospital-Miguel-Arraes-191-scaled.jpg) center;
+    background-size: 100%;
+    transition: .2s;
+  }
+  .carousel:hover .img-card{
+    background-size: 105%;
+  }
+  
+  .img-card-2 {
+     width: 100%;
+    height: 500px;
+    background: url(https://images.wallpapersden.com/image/download/scrubs-tv-show-actors_amZqbGuUmZqaraWkpJRnamtlrWZpaWU.jpg) center;
+    background-size: 55%;
+    transition: .2s;
+    
+  }
+  .carousel:hover .img-card-2{
+    background-size: 60%;
+  }
+  
+  .img-card-3 {
+     width: 100%;
+    height: 500px;
+    background: url(https://blog.russelservicos.com.br/wp-content/uploads/2021/10/Torne-a-gestao-do-Hospital-mais-eficiente-com-terceirizacao-scaled.jpg) center;
+    background-size: 100%;
+    transition: .2s;
+  }
+  .carousel:hover .img-card-3{
+    background-size: 105%;
+  }
+  
+  
+  
+  .card-top {
+    color: rgb(1,1,1, 0);
+    transition: .2s;
+  }
+
+  @media (max-width: 700px){
+    .img-card{
+        margin: -140px auto;
+        width: 100%;
+    }
+    .img-card-2{
+        margin: -135px auto;
+        width: 100%;
+    }
+    .img-card-3{
+        margin: -140px auto;
+        width: 100%;
+    }
+  }
+
+  .carousel-control-prev-icon{
+    margin-left: -162px;
+  }
+
+  .carousel-control-next{
+    margin-right: -82px;
+  }
+
+  @media (max-width: 700px){
+    .carousel-control-prev-icon{
+        margin-left: -6px;
+    }
+
+    .carousel-control-next{
+        margin-right: -9px;
+    }
+  }
+
+  /*PRODUTOS*/
+
+  .produtos{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .produtos-col{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .produtos-col img{
+    width: 100%;
+    display: block;
+
+  }
+  .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  .layer:hover{
+    background: rgba(226,0,0,0.7);
+  }
+  .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+  }
+  @media (max-width: 700px) {
+    .produtos-col{
+        width: 100%;
+        padding: 5px;
+        margin: auto;
+    }
+    .produtos{
+        width: 100%;
+    }
+    .produtos-col img{
+        width: 100%;
+        display: block;
+        
+    }
+  }
+  

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo</title>
+    <link rel="stylesheet" href="prototipo1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5c5dea0b83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <!--Imagem da logo no canto superior esquerdo do site-->
+            <a href="prototipo.html"><img src="/IMAGEM/LogoCloud.svg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <!--Botão do mobile-->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="prototipo.html">HOME</a></li>
+                    <li><a href="">SOBRE</a></li>
+                    <li><a href="prototipoproduto.html">PRODUTOS</a></li>
+                    <li><a href="">CONTATE-NOS</a></li>
+                </ul>
+            </div>
+            <!--Botão Mobile-->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Sobre nós</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </section>
+
+    <!--Conteudo do "sobre nós"-->
+
+    <section class="sobre-nos">
+        
+    <div class="row">
+        <div class="sobre-col">
+            <h1>Nós somos um projeto em desenvolvimento</h1>
+            <p>Com a ideia de facilitar a vida das pessoas, nosso projeto tem como visão ajudar todas as idades, porém com foco nos mais idosos.</p>
+            <a href="prototipo.html" class="hero-btn azulm-btn">Acesse agora!</a>
+        </div>
+
+        <div class="sobre-col">
+            <h1>O que é?</h1>
+            <p>O projeto Cloud Life, será um site inicialmente voltado para unificação de prontuário.</p>
+
+        </div>
+        <div class="sobre-col">
+            <h1>Pra que serve?</h1>
+            <p>Serve para acessar informações básicas ou essenciais sobre a saúde do usuário.</p>
+        </div>
+        <div class="sobre-col">
+            <h1>Como funciona?</h1>
+            <p>Cadastrar o usuário e preencher o banco de dados com informações de sua saúde.</p>
+        </div>
+
+        <div class="sobre-col">
+            <img src="/IMAGEM/Fotoequipe.jpg">
+        </div>
+    </div>
+    </section>
+    
+
+    
+<!--Java para acionar menu no mobile-->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+<!--Footer-->
+<section class="footer">
+    <h4>Sobre nós</h4>
+    <p class="pfooter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <a href="mailto:cloudlifeprojeto@hotmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/cloudl1fe/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" ></i></a>
+        <i class="fa fa-github"></i>
+    </div>
+</section>
+<!--Fim do Footer-->
+
+
+
+</body>
+</html>
